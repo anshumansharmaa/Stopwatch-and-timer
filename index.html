@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flip Timer & Stopwatch</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Flip Timer / Stopwatch</h1>
+
+    <div class="mode-buttons">
+      <button id="switchToTimer">Timer</button>
+      <button id="switchToStopwatch">Stopwatch</button>
+    </div>
+
+    <div id="timeInputs">
+      <input type="number" id="hoursInput" min="0" placeholder="HH" />
+      <input type="number" id="minutesInput" min="0" max="59" placeholder="MM" />
+      <input type="number" id="secondsInput" min="0" max="59" placeholder="SS" />
+    </div>
+
+    <div class="display" id="display">00:00:00</div>
+
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+      <button id="fullscreen">Fullscreen</button>
+    </div>
+  </div>
+
+  <audio id="tickSound" src="tick.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
