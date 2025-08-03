@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  text-align: center;
+}
+.display {
+  font-size: 4em;
+  margin: 20px 0;
+}
+.controls button,
+.mode-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+input {
+  width: 60px;
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+}
